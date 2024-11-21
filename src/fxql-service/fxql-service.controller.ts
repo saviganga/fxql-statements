@@ -30,6 +30,11 @@ export class FxqlServiceController {
     }
   }
 
+  @Get('health')
+  health() {
+    return { status: 'OK', message: 'Service is healthy' };
+  }
+
   // @Get()
   // findAll() {
   //   return this.fxqlServiceService.findAll();
