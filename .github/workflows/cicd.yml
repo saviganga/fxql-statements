@@ -30,6 +30,6 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v4
         with:
-          context: ./blogs
+          context: ./fxql
           push: true
-          tags: saviganga/blogs:${{ env.TAG }}
+          tags: saviganga/fxql:${{ env.TAG }}
